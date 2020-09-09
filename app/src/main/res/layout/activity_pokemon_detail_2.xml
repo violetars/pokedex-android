@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:padding="15dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvPokeTitle"
+        android:textStyle="bold"
+        android:text="chlorophyll"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:layout_margin="5dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivPokeSprite"
+        android:src="@drawable/game"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tvPokeTitle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/tvPokeXp"
+        android:text="XP Base: 50"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/ivPokeSprite"
+        android:layout_below="@id/ivPokeSprite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </RelativeLayout>

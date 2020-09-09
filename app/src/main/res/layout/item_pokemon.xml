@@ -10,26 +10,29 @@
 
     <LinearLayout
         android:id="@+id/llPokemonContainer"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:padding="10dp"
         android:weightSum="100"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
-        <ImageView
-            android:src="@drawable/game"
-            android:layout_weight="10"
-            android:layout_width="20dp"
-            android:layout_height="20dp" />
-
         <TextView
-            android:id="@+id/tvGame"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="90"
+            android:id="@+id/tvPokemonName"
+            android:textSize="12sp"
             android:textStyle="bold"
-            android:text="GAME TITLE"
-            android:textSize="12sp" />
+            android:layout_weight="90"
+            android:text="POKEMON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btPokemonDelete"
+            android:text="DELETE"
+            style="@style/AppTheme.Button"
+            android:layout_weight="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
 
     </LinearLayout>
 
